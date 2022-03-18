@@ -1,0 +1,84 @@
+:root{
+    --bgprimary: hsl(222, 26%, 31%);/*main bg */
+    --bgsecondary: hsl(223, 31%, 20%); /* keypad */
+    --bgterciary: hsl(224, 36%, 15%); /* screen */
+
+    --kprimary:  hsl(225, 21%, 49%);
+    --ksecondary: hsl(224, 28%, 35%);
+    --kIgual: hsl(6, 63%, 50%);
+    --kIgualShadow: hsl(6, 70%, 34%);
+
+    --tprimary : hsl(221, 14%, 31%);
+}
+
+body{
+font-size: 11px;
+background-color: var(--bgprimary);
+font-size: 32px;
+font-family: 'Spartan', sans-serif;
+}
+
+section{
+    margin-top: 50px;
+}
+
+
+button{
+    color: var(--ksecondary);
+    border-radius: 10px;
+    margin-left: 8px;
+    padding-top: 0.2rem;
+    border-bottom: rgba(128, 128, 128, 0.425) 4px solid;
+    font-size: smaller;
+}
+
+#cabecera{
+    color: white;
+}
+
+.theme1{
+    color: var(--kIgual);
+}
+.theme2{
+    color: bisque;
+}
+.theme3{
+    color: aqua;
+}
+#resultadocontainer {
+    background-color: var(--bgterciary);
+    border-radius: 10px;
+    height: 55px;
+    
+}
+
+#resultado{
+    color: white;
+}
+
+#numbers{
+    background-color: var(--bgsecondary);
+    border-radius: 10px;
+}
+
+#borrar{
+    font-size: 15px;
+    color: white;
+    background-color: var(--ksecondary);
+}
+
+#igual{
+    color: white;
+    background-color: var(--kIgual);
+    font-size: 15px;
+    padding: 0.7rem;
+    border-bottom: var(--kIgualShadow) 4px solid;
+}
+
+.letraPequena{
+    font-size: 20px;
+}
+
+/* hsl(228, 45%, 44%);; */
+
+/* Poner tamaño fijo al screen */
