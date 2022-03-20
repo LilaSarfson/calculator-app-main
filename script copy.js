@@ -51,6 +51,12 @@ numbers.addEventListener("click", function (event) {
 let tema1 = document.querySelector("#theme1");
 tema1.addEventListener("click", function(){
     //background 
+
+    tema1.style.color = "hsl(223, 31%, 20%";
+    restaurarColor(tema2, "white");
+    restaurarColor(tema3, "white");
+    
+
     document.documentElement.style.setProperty("--bgprimary", "hsl(222, 26%, 31%)");
     document.documentElement.style.setProperty("--bgsecondary", " hsl(223, 31%, 20%)");
     document.documentElement.style.setProperty("--bgterciary","hsl(224, 36%, 15%)");
@@ -79,7 +85,7 @@ let tema2 = document.querySelector("#theme2");
 tema2.addEventListener("click", function () {
 
     tema2.style.color = "hsl(25, 98%, 40%)";
-    console.log("estoy")
+    restaurarColor((tema1, tema3), "hsl(60, 10%, 19%)");
     //background 
     document.documentElement.style.setProperty("--bgprimary", "hsl(0, 0%, 90%)");
     document.documentElement.style.setProperty("--bgsecondary", "hsl(0, 5%, 81%)");
@@ -106,6 +112,9 @@ let tema3 = document.querySelector("#theme3");
 tema3.addEventListener("click", function() {
     //background
     tema3.style.color = "hsl(290, 70%, 36%)";
+    restaurarColor((tema1, tema2), "hsl(52, 100%, 62%)");
+   
+
     document.documentElement.style.setProperty("--bgprimary", "hsl(268, 75%, 9%)");
     document.documentElement.style.setProperty("--bgsecondary", "hsl(268, 71%, 12%)");
     document.documentElement.style.setProperty("--bgterciary","hsl(268, 71%, 12%)");
@@ -125,14 +134,18 @@ tema3.addEventListener("click", function() {
     document.documentElement.style.setProperty("--tsecondary", "hsl(52, 100%, 62%)");
 
     
+  
+    
+    
 })
 
-// function changeColor(etiqueta, color1){
-//     etiqueta.style.color = color1;
-//     console.log("funciono");
-// }
+function restaurarColor(etiqueta, color1){
+    etiqueta.style.color = color1;
+    console.log("estoy funcionando");
 
+}
 
+//setTimeout(saludos, 3000, "Nathan", "Programador");
 //Hacer una función para cambiar el color.
 //Hacer libreria
 // Hacer que las variables cambien de contenido 
