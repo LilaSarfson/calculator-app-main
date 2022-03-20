@@ -2,6 +2,7 @@
     --bgprimary: hsl(222, 26%, 31%);/*main bg */
     --bgsecondary: hsl(223, 31%, 20%); /* keypad */
     --bgterciary: hsl(224, 36%, 15%); /* screen */
+    --bgkey: hsl(30, 25%, 89%);
 
     --kprimary:  hsl(225, 21%, 49%);
     --ksecondary: hsl(224, 28%, 35%);
@@ -9,10 +10,12 @@
     --kIgualShadow: hsl(6, 70%, 34%);
 
     --tprimary : hsl(221, 14%, 31%);
+    --tsecondary: white;
+
+    --shadowButton: hsl(28, 16%, 65%);
 }
 
 body{
-font-size: 11px;
 background-color: var(--bgprimary);
 font-size: 32px;
 font-family: 'Spartan', sans-serif;
@@ -24,27 +27,20 @@ section{
 
 
 button{
-    color: var(--ksecondary);
+    background-color: var(--bgkey);
+    color: var(--tprimary);
     border-radius: 10px;
     margin-left: 8px;
     padding-top: 0.2rem;
-    border-bottom: rgba(128, 128, 128, 0.425) 4px solid;
+    border-bottom: var(--shadowButtonli) 4px solid;
     font-size: smaller;
 }
 
 #cabecera{
-    color: white;
+    color: var(--tsecondary);
+    
 }
 
-.theme1{
-    color: var(--kIgual);
-}
-.theme2{
-    color: bisque;
-}
-.theme3{
-    color: aqua;
-}
 #resultadocontainer {
     background-color: var(--bgterciary);
     border-radius: 10px;
@@ -53,7 +49,7 @@ button{
 }
 
 #resultado{
-    color: white;
+    color: var(--tsecondary);
 }
 
 #numbers{
@@ -66,7 +62,10 @@ button{
     color: white;
     background-color: var(--ksecondary);
 }
-
+#delete{
+    background-color: var(--ksecondary);
+    color: white;
+}
 #igual{
     color: white;
     background-color: var(--kIgual);
@@ -77,6 +76,9 @@ button{
 
 .letraPequena{
     font-size: 20px;
+}
+.tema{
+    color:white;
 }
 
 /* hsl(228, 45%, 44%);; */
