@@ -35,7 +35,6 @@ button{
     border-bottom: var(--shadowButtonli) 4px solid;
     font-size: smaller;
 }
-
 #cabecera{
     color: var(--tsecondary);
     

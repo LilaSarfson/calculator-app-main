@@ -82,10 +82,12 @@ tema1.addEventListener("click", function(){
 // TEMA 2 NARANJA
 
 let tema2 = document.querySelector("#theme2");
-tema2.addEventListener("click", function () {
-
+tema2.addEventListener("click", function (event) {
+    console.log(event.target.classList.add)
     tema2.style.color = "hsl(25, 98%, 40%)";
-    restaurarColor((tema1, tema3), "hsl(60, 10%, 19%)");
+    restaurarColor(tema1, "hsl(60, 10%, 19%)");
+    restaurarColor(tema3, "hsl(60, 10%, 19%)");
+    
     //background 
     document.documentElement.style.setProperty("--bgprimary", "hsl(0, 0%, 90%)");
     document.documentElement.style.setProperty("--bgsecondary", "hsl(0, 5%, 81%)");
@@ -112,7 +114,8 @@ let tema3 = document.querySelector("#theme3");
 tema3.addEventListener("click", function() {
     //background
     tema3.style.color = "hsl(290, 70%, 36%)";
-    restaurarColor((tema1, tema2), "hsl(52, 100%, 62%)");
+    restaurarColor(tema1, "hsl(52, 100%, 62%)");
+    restaurarColor(tema2, "hsl(52, 100%, 62%)");
    
 
     document.documentElement.style.setProperty("--bgprimary", "hsl(268, 75%, 9%)");
@@ -142,7 +145,8 @@ tema3.addEventListener("click", function() {
 function restaurarColor(etiqueta, color1){
     etiqueta.style.color = color1;
     console.log("estoy funcionando");
-
+    console.log(etiqueta);
+    console.log(color1);
 }
 
 //setTimeout(saludos, 3000, "Nathan", "Programador");
